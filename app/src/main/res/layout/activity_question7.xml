@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Q1RelativeLayout"
+    android:background="@color/colorGray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Question7Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/Q7imageView"
+        android:layout_width="145dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/enhower" />
+
+    <TextView
+        android:id="@+id/Q7textView"
+        android:layout_below="@id/Q7imageView"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/colorBlack"
+        android:text="Who was the the general who \n became the president of USA after the ww2?" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/Q7textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50pt"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginBottom="10pt"
+            android:id="@+id/Q7button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25pt"
+            android:text="Bush" />
+
+        <Button
+            android:id="@+id/Q7button2"
+            android:layout_marginBottom="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Q7button1"
+            android:text="Clinton" />
+
+        <Button
+            android:id="@+id/Q7button3"
+            android:layout_below="@id/Q7button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25pt"
+            android:text="Eisenhower" />
+
+        <Button
+            android:id="@+id/Q7button4"
+            android:layout_below="@id/Q7button2"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/Q7button3"
+            android:layout_height="wrap_content"
+            android:text="Montegomry" />
+    </RelativeLayout>
+
+</RelativeLayout>
