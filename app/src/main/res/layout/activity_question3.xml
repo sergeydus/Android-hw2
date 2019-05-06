@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Q3RelativeLayout"
+    android:background="#4c6d12"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Question3Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/Q3imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stg44"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50px"/>
+
+    <TextView
+        android:id="@+id/Q3textView"
+        android:layout_below="@id/Q3imageView"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:text="How is this gun called?" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q3textView"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/Q3button1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="Maschinenpistole 40"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/Q3button2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="Sturmgewehr 44"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/Q3button3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="MAUSER C96"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/Q3button4"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="GEWEHR 43"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
