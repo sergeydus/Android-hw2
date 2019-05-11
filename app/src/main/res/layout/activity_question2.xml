@@ -1,16 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Q1RelativeLayout"
+    android:background="@color/colorGray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Question2Activity">
 
+    <ImageView
+        android:layout_marginTop="200dp"
+        android:id="@+id/Q2imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <TextView
-        android:id="@+id/Q2TextView"
+        android:id="@+id/Q2textView"
+        android:layout_below="@id/Q2imageView"
+        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="103dp" />
-</android.support.constraint.ConstraintLayout>
+        android:textSize="25dp"
+        android:textColor="@color/colorBlack"
+        android:text="At which year did \n world war 2 end?" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/Q2textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50pt"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginBottom="10pt"
+            android:id="@+id/Q2button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25pt"
+            android:text="2008" />
+
+        <Button
+            android:id="@+id/Q2button2"
+            android:layout_marginBottom="10pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Q2button1"
+            android:text="1942" />
+
+        <Button
+            android:id="@+id/Q2button3"
+            android:layout_below="@id/Q2button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25pt"
+            android:text="1969" />
+
+        <Button
+            android:id="@+id/Q2button4"
+            android:layout_below="@id/Q2button2"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/Q2button3"
+            android:layout_height="wrap_content"
+            android:text="1945" />
+    </RelativeLayout>
+
+</RelativeLayout>
