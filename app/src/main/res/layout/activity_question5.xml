@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Q5RelativeLayout"
+    android:background="@color/colorGray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question5Activity">
+    tools:context=".Question1Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/Q5imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="398dp"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="-20dp"
+        app:srcCompat="@drawable/mark1" />
+
+    <TextView
+        android:id="@+id/Q5textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q5imageView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="-46dp"
+        android:layout_marginBottom="-50dp"
+        android:text="What Country First Use Tanks, and When?"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="288dp"
+        android:layout_height="126dp"
+        android:layout_below="@id/Q5textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/Q5button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25pt"
+            android:layout_marginBottom="10pt"
+            android:text="France, WWI" />
+
+        <Button
+            android:id="@+id/Q5button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10pt"
+            android:layout_toRightOf="@id/Q5button1"
+            android:text="Britain, WWII" />
+
+        <Button
+            android:id="@+id/Q5button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q5button1"
+            android:layout_marginRight="25pt"
+            android:text="Germany, WWI" />
+
+        <Button
+            android:id="@+id/Q5button4"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q5button2"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/Q5button3"
+            android:text="Britain, WWI" />
+    </RelativeLayout>
+
+</RelativeLayout>

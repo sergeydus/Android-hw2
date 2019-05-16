@@ -1,9 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Q6RelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Question6Activity">
+    android:background="@color/colorGray"
+    tools:context=".Question1Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/Q6imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="-50dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="-10dp"
+        app:srcCompat="@drawable/hqdefault" />
+
+    <TextView
+        android:id="@+id/Q6textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q6imageView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="What Two Countries Were Already Involved In A Military Conflict Before World War II?"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="399dp"
+        android:layout_height="128dp"
+        android:layout_below="@id/Q6textView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:paddingStart="25dp">
+
+        <Button
+            android:id="@+id/Q6button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25pt"
+            android:layout_marginBottom="10pt"
+            android:padding="5dp"
+            android:text="Japan and China" />
+
+        <Button
+            android:id="@+id/Q6button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10pt"
+            android:layout_toRightOf="@id/Q6button1"
+            android:padding="5dp"
+            android:text="Japan and USA" />
+
+        <Button
+            android:id="@+id/Q6button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Q6button1"
+            android:layout_marginRight="25pt"
+            android:padding="5dp"
+            android:text="Germany and Poland" />
+
+        <Button
+            android:id="@+id/Q6button4"
+            android:layout_width="98dp"
+            android:layout_height="99dp"
+            android:layout_below="@id/Q6button2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="-28dp"
+            android:layout_marginTop="-18dp"
+            android:layout_marginEnd="6dp"
+            android:layout_toRightOf="@id/Q6button3"
+            android:padding="5dp"
+            android:text="Germany and France" />
+    </RelativeLayout>
+
+</RelativeLayout>
