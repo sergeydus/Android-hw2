@@ -1,4 +1,10 @@
 # Android-hw2
 
-Git-Tehheavy= Alex dushevski 313313983 </br>
-Git-sergeydus, Sergey Dushevski 313313991
+
+Alex Dushevski - Tehheavy - 313313983 </br>
+
+Sergey Dushevski - sergeydus - 313313991 </br>
+
+Roi 203116694</br>
+
+Ron 305432049 </br>
