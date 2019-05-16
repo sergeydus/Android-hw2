@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:textColor="@color/colorBlack"
-        android:text="Which of the following \n countries remained nutral?" />
+        android:text="Which of the following \n countries remained neutral?" />
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_below="@id/Q8textView"

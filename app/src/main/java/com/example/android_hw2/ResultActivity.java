@@ -15,6 +15,9 @@ public class ResultActivity extends AppCompatActivity {
         currentScore=getIntent().getIntExtra("score",0);
 
         test=findViewById(R.id.ResultTextView);
-        test.setText("the current score is "+currentScore);
+        if(currentScore!=10)
+            test.setText("the current score is "+currentScore +" Try to get to 10 ,loser.");
+        if(currentScore==10)
+            test.setText("the current score is "+currentScore +" YOU WIN!");
     }
 }

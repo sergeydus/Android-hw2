@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Q10RelativeLayout"
+    android:background="#4c6d12"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Question10Activity">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/Q10imageView"
+        android:layout_marginTop="200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Q10textView"
+        android:layout_below="@id/Q10imageView"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:text="When did France surrender \nto Germany?" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Q10textView"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/Q10button1"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="June 22, 1940"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/Q10button2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="April 1, 1969"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/Q10button3"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="May 17,1938"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/Q10button4"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:text="November 31,1941"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
