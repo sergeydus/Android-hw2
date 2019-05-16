@@ -52,12 +52,12 @@ public class Question8Activity extends AppCompatActivity {
 
 
     public void openActivity1(){
-        Intent intent = new Intent(this, Question2Activity.class);
+        Intent intent = new Intent(this, ResultActivity.class);
         intent.putExtra("score",score1+1);
         startActivity(intent);
     }
     public void openActivity2(){
-        Intent intent = new Intent(this, Question2Activity.class);
+        Intent intent = new Intent(this, ResultActivity.class);
         intent.putExtra("score",score1);
         startActivity(intent);
     }

@@ -50,22 +50,22 @@ public class Question4Activity extends AppCompatActivity {
 
 
     public void openActivity1(){
-        Intent intent = new Intent(this, ResultActivity.class);
+        Intent intent = new Intent(this, Question5Activity.class);
         intent.putExtra("score",currentScore+1);
         startActivity(intent);
     }
     public void openActivity2(){
-        Intent intent = new Intent(this, ResultActivity.class);
+        Intent intent = new Intent(this, Question5Activity.class);
         intent.putExtra("score",currentScore+0);
         startActivity(intent);
     }
     public void openActivity3(){
-        Intent intent = new Intent(this, ResultActivity.class);
+        Intent intent = new Intent(this, Question5Activity.class);
         intent.putExtra("score",currentScore+0);
         startActivity(intent);
     }
     public void openActivity4(){
-        Intent intent = new Intent(this, ResultActivity.class);
+        Intent intent = new Intent(this, Question5Activity.class);
         intent.putExtra("score",currentScore+0);
         startActivity(intent);
     }
